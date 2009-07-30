@@ -18,10 +18,7 @@ int is_empty(struct BinaryHeap *bh) {
 
 /* Returns the minimum element without removing it */
 int find_min(struct BinaryHeap *bh) {
-    if(is_empty(bh))
-        return 0;
-    else
-        return bh->array[0];
+    return bh->array[0];
 }
 
 /* Percolates the hole from the new position and fills the x once no elements above are less */
